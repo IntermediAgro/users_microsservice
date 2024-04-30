@@ -13,7 +13,8 @@
     "format:check": "prettier --check --ignore-path .gitignore ./src/**/*.{ts,js}",
     "test": "jest --passWithNoTests --color",
     "test:staged": "jest --passWithNoTests --color --findRelatedTests",
-    "test:dev": "jest --watchAll --coverage --passWithNoTests --color"
+    "test:dev": "jest --watchAll --coverage --passWithNoTests --color",
+    "test:docker": "npm run test:coverage && npm run test:dev"
   },
   "repository": {
     "type": "git",
