@@ -1,3 +1,4 @@
 export const MIDDLEWARE_REGISTRY = {
   ERROR: Symbol.for('MODULE::APP::MIDDLEWARE::ERROR'),
+  LOGGER: Symbol.for('MODULE::APP::MIDDLEWARE::LOGGER'),
 };
