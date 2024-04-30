@@ -1,7 +1,7 @@
 import { Container } from 'inversify';
 import { ERROR_MIDDLEWARE } from './error/error.middleware';
 import { MIDDLEWARE_REGISTRY } from './middleware.registry';
-import { LOGGER_MIDDLEWARE } from './error/log/logger.middleware';
+import { LOGGER_MIDDLEWARE } from './log/logger.middleware';
 
 export const MIDDLEWARE_MODULE = new Container({
   autoBindInjectable: true,
