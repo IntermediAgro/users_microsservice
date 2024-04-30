@@ -8,4 +8,14 @@ export class User {
     private _type: 'CLIENT' | 'FARMER' | 'SUPPLIER',
     private _token?: string,
   ) {}
+
+  public toDTO(): IUserDTO {
+    return {
+      name: this._name,
+      email: this._email,
+      password: this._password,
+      user_type: this._type,
+      token: this._token,
+    };
+  }
 }
