@@ -9,7 +9,8 @@
     "start:dev": "ts-node src/index.ts",
     "start:docker": "npm run start",
     "lint:fix": "eslint ./src/**/*.{ts,js} --fix",
-    "format:fix": "prettier --check --write --ignore-path .gitignore ./src/**/*.{ts,js}"
+    "format:fix": "prettier --check --write --ignore-path .gitignore ./src/**/*.{ts,js}",
+    "format:check": "prettier --check --ignore-path .gitignore ./src/**/*.{ts,js}"
   },
   "repository": {
     "type": "git",
