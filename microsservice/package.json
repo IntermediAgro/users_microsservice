@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc --build",
     "start": "node ./build/src/server.js",
-    "start:dev": "ts-node src/index.ts"
+    "start:dev": "ts-node src/index.ts",
+    "start:docker": "npm run start"
   },
   "repository": {
     "type": "git",
