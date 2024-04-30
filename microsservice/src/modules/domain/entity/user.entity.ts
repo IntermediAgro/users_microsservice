@@ -9,7 +9,7 @@ export class User {
     private _token?: string,
   ) {}
 
-  public toDTO(): IUserDTO {
+  toDTO(): IUserDTO {
     return {
       name: this._name,
       email: this._email,
@@ -17,5 +17,15 @@ export class User {
       user_type: this._type,
       token: this._token,
     };
+  }
+
+  static fromDTO(DTO: IUserDTO) {
+    return new User(
+      DTO.name,
+      DTO.email,
+      DTO.password,
+      DTO.user_type,
+      DTO.token,
+    );
   }
 }
