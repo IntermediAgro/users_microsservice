@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/IntermediAgro/users_microsservice#readme",
   "dependencies": {
+    "express": "^4.19.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
