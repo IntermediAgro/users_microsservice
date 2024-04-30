@@ -32,6 +32,7 @@
   "dependencies": {
     "express": "^4.19.2",
     "inversify": "^6.0.2",
+    "inversify-inject-decorators": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
