@@ -5,6 +5,12 @@ import { MIDDLEWARE_REGISTRY } from './middleware.registry';
 export const MIDDLEWARE_FACTORY = {
   ERROR: () =>
     MIDDLEWARE_MODULE.get<ErrorRequestHandler>(MIDDLEWARE_REGISTRY.ERROR),
-  LOGGER: () =>
-    MIDDLEWARE_MODULE.get<RequestHandler>(MIDDLEWARE_REGISTRY.LOGGER),
+  LOGGER: {
+    APP: () =>
+      MIDDLEWARE_MODULE.get<RequestHandler>(MIDDLEWARE_REGISTRY.LOGGER.APP),
+    ERROR: () =>
+      MIDDLEWARE_MODULE.get<ErrorRequestHandler>(
+        MIDDLEWARE_REGISTRY.LOGGER.ERROR,
+      ),
+  },
 };
