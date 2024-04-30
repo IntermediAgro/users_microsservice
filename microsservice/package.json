@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/IntermediAgro/users_microsservice/issues"
   },
-  "homepage": "https://github.com/IntermediAgro/users_microsservice#readme"
+  "homepage": "https://github.com/IntermediAgro/users_microsservice#readme",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
 }
