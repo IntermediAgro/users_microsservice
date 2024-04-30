@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc --build",
     "start": "node ./build/src/server.js",
-    "start:dev": "ts-node src/index.ts",
+    "start:dev": "ts-node src/server.ts",
     "start:docker": "npm run start",
     "lint:fix": "eslint ./src/**/*.{ts,js} --fix",
     "format:fix": "prettier --check --write --ignore-path .gitignore ./src/**/*.{ts,js}",
@@ -30,10 +30,16 @@
   },
   "homepage": "https://github.com/IntermediAgro/users_microsservice#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "inversify": "^6.0.2",
+    "inversify-inject-decorators": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
     "@types/jest": "^29.5.12",
     "eslint": "^9.1.1",
     "eslint-config-prettier": "^9.1.0",
