@@ -1,0 +1,19 @@
+{
+  "name": "microsservice",
+  "version": "1.0.0",
+  "description": "handle users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IntermediAgro/users_microsservice.git"
+  },
+  "author": "IntermediAgro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IntermediAgro/users_microsservice/issues"
+  },
+  "homepage": "https://github.com/IntermediAgro/users_microsservice#readme"
+}
