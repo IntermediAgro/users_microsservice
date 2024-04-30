@@ -1,6 +1,6 @@
 import { Container } from 'inversify';
 import { ROUTER_REGISTRY } from './router.registry';
-import { APP_ROUTER, router } from './app.router';
+import { APP_ROUTER } from './app.router';
 
 export const ROUTER_MODULE = new Container({ autoBindInjectable: true });
 
