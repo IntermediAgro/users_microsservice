@@ -10,7 +10,6 @@
     "emitDecoratorMetadata": true,
     "rootDir": "./",
     "outDir": "./build",
-    "baseUrl": "./src",
-    "include": ["**/*.ts", "./src/**/*.ts"]
+    "baseUrl": "./src"
   }
 }
