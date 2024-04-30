@@ -1,4 +1,4 @@
-import { logger } from '../../../../infra/logger.module';
+import { logger } from '../../../infra/logger.module';
 import { RequestHandler } from 'express';
 
 export const LOGGER_MIDDLEWARE: RequestHandler = (req, res, next) => {
