@@ -17,7 +17,7 @@
     "test:docker": "npm run test:coverage && npm run test:dev",
     "code:ci": "npm run format:fix && npm run lint:fix && npm run test:coverage",
     "db:sync": "prisma generate && prisma db push",
-    "husky:prepare": "husky install"
+    "husky:prepare": "cd ../ && husky install"
   },
   "repository": {
     "type": "git",
