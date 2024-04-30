@@ -12,7 +12,8 @@
     "format:fix": "prettier --check --write --ignore-path .gitignore ./src/**/*.{ts,js}",
     "format:check": "prettier --check --ignore-path .gitignore ./src/**/*.{ts,js}",
     "test": "jest --passWithNoTests --color",
-    "test:staged": "jest --passWithNoTests --color --findRelatedTests"
+    "test:staged": "jest --passWithNoTests --color --findRelatedTests",
+    "test:dev": "jest --watchAll --coverage --passWithNoTests --color"
   },
   "repository": {
     "type": "git",
