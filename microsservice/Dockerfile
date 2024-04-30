@@ -24,6 +24,7 @@ USER node
 WORKDIR /home/node/app
 
 COPY --chown=node:node --from=build /home/node/app/node_modules ./node_modules
+COPY --chown=node:node --from=build /home/node/app/package*.json ./
 COPY --chown=node:node --from=build /home/node/app/build ./build
 
 CMD [ "npm", "run", "start:docker" ]
