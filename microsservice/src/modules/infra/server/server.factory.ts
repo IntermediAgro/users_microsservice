@@ -4,4 +4,5 @@ import { SERVER_REGISTRY } from './server.registry';
 
 export const SERVER_FACTORY = {
   HTTP: () => SERVER_MODULE.get<Express>(SERVER_REGISTRY.HTTP),
+  CORS: () => SERVER_MODULE.get<any>(SERVER_REGISTRY.CORS),
 };
