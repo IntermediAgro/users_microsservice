@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/IntermediAgro/users_microsservice#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "inversify": "^6.0.2",
     "inversify-inject-decorators": "^3.1.0",
