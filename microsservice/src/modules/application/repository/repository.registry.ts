@@ -1,3 +1,5 @@
+import { REPOSITORY_PRISMA_REGISTRY } from './prisma/prisma.registry';
+
 export const REPOSITORY_REGISTRY = {
-  PRISMA: Symbol.for('MODULES::REPOSITORY::PRISMA'),
+  PRISMA: REPOSITORY_PRISMA_REGISTRY,
 };
