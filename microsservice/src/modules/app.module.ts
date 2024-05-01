@@ -7,6 +7,7 @@ import { MIDDLEWARE_MODULE } from './application/middleware/middleware.module';
 import { REPOSITORY_MODULE } from './application/repository/repository.module';
 import { USE_CASE_MODULE } from './application/use_case/use_case.module';
 import { SERVICE_MODULE } from './application/service/service.module';
+import { CONTROLLER_MODULE } from './application/controller/controller.module';
 
 const _MODULE = new Container({ autoBindInjectable: true });
 
@@ -18,4 +19,5 @@ export const APP_MODULE = Container.merge(
   REPOSITORY_MODULE,
   USE_CASE_MODULE,
   SERVICE_MODULE,
+  CONTROLLER_MODULE,
 );
