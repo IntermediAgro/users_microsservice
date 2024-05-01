@@ -1,0 +1,3 @@
+export const REPOSITORY_PRISMA_REGISTRY = {
+  USER: Symbol.for('MODULES::REPOSITORY::PRISMA::USER'),
+};
