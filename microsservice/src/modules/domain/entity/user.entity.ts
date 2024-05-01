@@ -5,8 +5,8 @@ export class User {
     private _name: string,
     private _email: string,
     private _password: string,
-    private _type: 'CLIENT' | 'FARMER' | 'SUPPLIER',
-    private _token?: string,
+    private _user_type: 'CLIENT' | 'FARMER' | 'SUPPLIER',
+    private _token?: string | null,
   ) {}
 
   toDTO(): IUserDTO {
@@ -14,7 +14,7 @@ export class User {
       name: this._name,
       email: this._email,
       password: this._password,
-      user_type: this._type,
+      user_type: this._user_type,
       token: this._token,
     };
   }
