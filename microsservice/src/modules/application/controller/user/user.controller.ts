@@ -1,5 +1,5 @@
 import { injectable } from 'inversify';
-import { UserService } from 'modules/application/service/user/user.service';
+import { UserService } from '../../../../modules/application/service/user/user.service';
 
 @injectable()
 export class UserController {
