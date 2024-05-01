@@ -5,6 +5,6 @@ import { IFindUserByEmailDTO } from '../../../../../domain/dto/user/find/by/emai
 @injectable()
 export class FindUserByEmailUseCase extends PrismaUserRepositorySupport {
   async execute(user: IFindUserByEmailDTO) {
-    return this._repository.findByEmail(user);
+    return await this._repository.findByEmail(user);
   }
 }
