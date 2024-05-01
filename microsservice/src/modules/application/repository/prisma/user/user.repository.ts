@@ -3,6 +3,7 @@ import { inject, injectable } from 'inversify';
 import { MODULE } from 'modules/app.registry';
 import { ICreateUserDTO } from 'modules/domain/dto/user/create.dto';
 import { IFindUserByEmail } from 'modules/domain/dto/user/find/by/email.dto';
+import { IUserDTO } from 'modules/domain/dto/user/user.dto';
 import { User } from 'modules/domain/entity/user.entity';
 import { IUserRepository } from 'modules/domain/repository/user.repository';
 
@@ -13,9 +14,11 @@ export class PrismaUserRepository implements IUserRepository {
     private _client: PrismaClient,
   ) {}
 
-  create(user: ICreateUserDTO): Promise<User> {
-    throw new Error('Method not implemented.');
+  async create(user: ICreateUserDTO) {
+    const result = await this._client.users.create({ data: user });
+    return User.fromDTO(result as IUserDTO);
   }
+
   findByEmail(user: IFindUserByEmail): Promise<User> {
     throw new Error('Method not implemented.');
   }
