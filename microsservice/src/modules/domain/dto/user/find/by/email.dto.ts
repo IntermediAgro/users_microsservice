@@ -1,3 +1,3 @@
-export interface IFindUserByEmail {
+export interface IFindUserByEmailDTO {
   email: string;
 }
