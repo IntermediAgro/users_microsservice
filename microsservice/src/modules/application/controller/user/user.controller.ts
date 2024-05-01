@@ -1,8 +1,8 @@
 import { inject, injectable } from 'inversify';
 import { UserService } from '../../../../modules/application/service/user/user.service';
 import { ICreateUserDTO } from '../../../../modules/domain/dto/user/create.dto';
-import { MODULE } from 'modules/app.registry';
-import { IFindUserByEmailDTO } from 'modules/domain/dto/user/find/by/email.dto';
+import { MODULE } from '../../../../modules/app.registry';
+import { IFindUserByEmailDTO } from '../../../../modules/domain/dto/user/find/by/email.dto';
 
 @injectable()
 export class UserController {

@@ -1,12 +1,12 @@
 import { PrismaClient } from '@prisma/client';
 import { inject, injectable } from 'inversify';
-import { MODULE } from 'modules/app.registry';
-import { ICreateUserDTO } from 'modules/domain/dto/user/create.dto';
-import { IFindUserByEmailDTO } from 'modules/domain/dto/user/find/by/email.dto';
-import { ISetUserTokenDTO } from 'modules/domain/dto/user/set/token.dto';
-import { IUserDTO } from 'modules/domain/dto/user/user.dto';
-import { User } from 'modules/domain/entity/user.entity';
-import { IUserRepository } from 'modules/domain/repository/user.repository';
+import { MODULE } from '../../../../../modules/app.registry';
+import { ICreateUserDTO } from '../../../../../modules/domain/dto/user/create.dto';
+import { IFindUserByEmailDTO } from '../../../../../modules/domain/dto/user/find/by/email.dto';
+import { ISetUserTokenDTO } from '../../../../../modules/domain/dto/user/set/token.dto';
+import { IUserDTO } from '../../../../../modules/domain/dto/user/user.dto';
+import { User } from '../../../../../modules/domain/entity/user.entity';
+import { IUserRepository } from '../../../../../modules/domain/repository/user.repository';
 
 @injectable()
 export class PrismaUserRepository implements IUserRepository {

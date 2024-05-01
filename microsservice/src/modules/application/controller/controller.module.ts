@@ -1,4 +1,4 @@
-import { SERVER_MODULE } from 'modules/infra/server/server.module';
+import { SERVER_MODULE } from '../../../modules/infra/server/server.module';
 import { CONTROLLER_REGISTRY } from './controller.registry';
 import { UserController } from './user/user.controller';
 import { Container } from 'inversify';
