@@ -26,7 +26,7 @@ export class PrismaUserRepository implements IUserRepository {
   }
 
   async setToken(user: ISetUserTokenDTO) {
-    const result = await this._client.users.update({
+    await this._client.users.update({
       where: { id: user.id },
       data: { token: user.token },
     });
