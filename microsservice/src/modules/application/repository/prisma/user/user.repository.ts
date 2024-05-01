@@ -30,6 +30,5 @@ export class PrismaUserRepository implements IUserRepository {
       where: { id: user.id },
       data: { token: user.token },
     });
-    return User.fromDTO(result as IUserDTO);
   }
 }
