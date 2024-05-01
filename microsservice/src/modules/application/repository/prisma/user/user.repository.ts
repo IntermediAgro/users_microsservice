@@ -19,7 +19,8 @@ export class PrismaUserRepository implements IUserRepository {
     return User.fromDTO(result as IUserDTO);
   }
 
-  findByEmail(user: IFindUserByEmail): Promise<User> {
-    throw new Error('Method not implemented.');
+  async findByEmail(user: IFindUserByEmail) {
+    const result = await this._client.users.findUnique({ where: user });
+    return User.fromDTO(result as IUserDTO);
   }
 }
