@@ -1,0 +1,3 @@
+export const REPOSITORY_REGISTRY = {
+  PRISMA: Symbol.for('MODULES::REPOSITORY::PRISMA'),
+};
