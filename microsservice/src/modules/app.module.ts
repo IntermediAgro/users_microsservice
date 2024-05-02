@@ -8,6 +8,7 @@ import { REPOSITORY_MODULE } from './application/repository/repository.module';
 import { USE_CASE_MODULE } from './application/use_case/use_case.module';
 import { SERVICE_MODULE } from './application/service/service.module';
 import { CONTROLLER_MODULE } from './application/controller/controller.module';
+import { GATEWAY_MODULE } from './application/gateway/gateway.module';
 
 const _MODULE = new Container({ autoBindInjectable: true });
 
@@ -20,4 +21,5 @@ export const APP_MODULE = Container.merge(
   USE_CASE_MODULE,
   SERVICE_MODULE,
   CONTROLLER_MODULE,
+  GATEWAY_MODULE,
 );
