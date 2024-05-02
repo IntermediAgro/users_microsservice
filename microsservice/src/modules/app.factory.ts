@@ -1,4 +1,5 @@
 import { CONTROLLER_FACTORY } from './application/controller/controller.factory';
+import { GATEWAY_FACTORY } from './application/gateway/gateway.factory';
 import { MIDDLEWARE_FACTORY } from './application/middleware/middleware.factory';
 import { REPOSITORY_FACTORY } from './application/repository/repository.factory';
 import { ROUTER_FACTORY } from './application/router/router.factory';
@@ -14,4 +15,5 @@ export const MODULES = {
   USE_CASE: USE_CASE_FACTORY,
   SERCVICE: SERVICE_FACTORY,
   CONTROLLER: CONTROLLER_FACTORY,
+  GATEWAY: GATEWAY_FACTORY,
 };
