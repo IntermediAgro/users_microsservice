@@ -12,14 +12,18 @@ export class JWTAuthGateway implements IAuthGateway {
   constructor(
     @inject(MODULE.INFRA.EMGINE.AUTH.JWT)
     private readonly _client: JWT,
+    @inject(MODULE.INFRA.CONFIG.AUTH.JWT.SECRET)
+    private readonly _secret: string,
   ) {}
 
-  encode({ plain_text }: IEncodeAuthDTO): IEncodeAuthOutputDTO {
+  generateToken({ plain_text }: IEncodeAuthDTO): IEncodeAuthOutputDTO {
     return {
-      token: this._client.sign(plain_text, ''),
+      token: this._client.sign(plain_text, this._secret),
     };
   }
-  decode(DTO: IDecodeAuthDTO): IDecodeAuthOutputDTO {
-    throw new Error('Method not implemented.');
+  validateToken({ token }: IDecodeAuthDTO): IDecodeAuthOutputDTO {
+    return {
+      payload: this._client.verify(token, this._secret) as string,
+    };
   }
 }
