@@ -1,3 +1,3 @@
 export interface IDecodeAuthOutputDTO {
-  email: string;
+  plain_text: string;
 }
