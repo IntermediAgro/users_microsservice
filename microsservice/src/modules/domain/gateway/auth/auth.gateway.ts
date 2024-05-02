@@ -4,6 +4,6 @@ import { IEncodeAuthDTO } from 'modules/domain/dto/auth/encode.dto';
 import { IEncodeAuthOutputDTO } from 'modules/domain/dto/auth/output/encode.dto';
 
 export interface IAuthGateway {
-  encode(DTO: IEncodeAuthDTO): IEncodeAuthOutputDTO;
-  decode(DTO: IDecodeAuthDTO): IDecodeAuthOutputDTO;
+  generateToken(DTO: IEncodeAuthDTO): IEncodeAuthOutputDTO;
+  validateToken(DTO: IDecodeAuthDTO): IDecodeAuthOutputDTO;
 }
