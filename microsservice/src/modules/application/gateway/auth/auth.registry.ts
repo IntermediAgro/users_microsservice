@@ -1,0 +1,3 @@
+export const GATEWAY_AUTH_REGISTRY = {
+  JWT: Symbol.for('MODULES::APPLICATION::GATEWAY::AUTH::JWT'),
+};
