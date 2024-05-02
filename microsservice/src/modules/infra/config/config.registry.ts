@@ -4,7 +4,9 @@ export const CONFIG_REGISTRY = {
   DATABASE: {
     URL: Symbol.for('MODULE::INFRA::CONFIG::DATABASE::URL'),
   },
-  JWT: {
-    SECRET: Symbol.for('MODULE::INFRA::CONFIG::JWT::SECRET'),
+  AUTH: {
+    JWT: {
+      SECRET: Symbol.for('MODULE::INFRA::CONFIG::JWT::SECRET'),
+    },
   },
 };

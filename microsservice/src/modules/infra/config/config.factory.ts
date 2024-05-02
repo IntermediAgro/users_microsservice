@@ -10,9 +10,11 @@ export const CONFIG_FACTORY = {
       CONFIG_REGISTRY.DATABASE.URL,
     ),
   },
-  JWT: {
-    SECRET: CONFIG_MODULE.get<typeof CONFIG.ENV.JWT.SECRET>(
-      CONFIG_REGISTRY.JWT.SECRET,
-    ),
+  AUTH: {
+    JWT: {
+      SECRET: CONFIG_MODULE.get<typeof CONFIG.ENV.JWT.SECRET>(
+        CONFIG_REGISTRY.AUTH.JWT.SECRET,
+      ),
+    },
   },
 };
